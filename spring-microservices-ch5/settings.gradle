@@ -1,0 +1,3 @@
+rootProject.name='spring-microservices-ch5'
+include ':config-server'
+include ':licensing-service'
