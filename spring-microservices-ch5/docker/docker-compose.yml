@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: "spring"
       POSTGRES_PASSWORD: "spring123#"
-      POSTGRES_DB:       "spring-db"
+      POSTGRES_DB:       "spring"
     volumes:
         - ./init.sql:/docker-entrypoint-initdb.d/1-init.sql
         - ./data.sql:/docker-entrypoint-initdb.d/2-data.sql
@@ -16,7 +16,7 @@ services:
         aliases:
           - "database"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U spring"]
       interval: 10s
       timeout: 5s
       retries: 5
