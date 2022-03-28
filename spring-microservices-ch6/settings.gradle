@@ -1,0 +1,5 @@
+rootProject.name='spring-microservices-ch6'
+include 'config-server'
+include 'licensing-service'
+include 'eureka-server'
+
