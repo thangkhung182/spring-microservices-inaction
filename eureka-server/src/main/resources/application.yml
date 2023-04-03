@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server
+
+  config:
+    import: "configserver:http://localhost:8071"
+
+ribbon:
+  eureka:
+    enabled: false
+
