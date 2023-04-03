@@ -1,0 +1,20 @@
+server:
+  port: 8762
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: organization-service
+        uri: lb://organization-service
+        predicates:
+        - Path=/organization/{segment}
+        filters:
+        - SetPath=/v1/organization/{segment}
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka

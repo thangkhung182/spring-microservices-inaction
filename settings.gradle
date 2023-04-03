@@ -3,4 +3,4 @@ include 'config-server'
 include 'licensing-service'
 include 'organization-service'
 include 'eureka-server'
-
+include 'gateway-server'
