@@ -3,6 +3,7 @@ package com.trungnguyen.license.controller;
 import com.trungnguyen.license.model.utils.ErrorMessage;
 import com.trungnguyen.license.model.utils.ResponseWrapper;
 import com.trungnguyen.license.model.utils.RestErrorList;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -11,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import javax.servlet.http.HttpServletRequest;
 
 import static java.util.Collections.singletonMap;
 
